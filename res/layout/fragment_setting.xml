@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="@color/btn_color"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="UserName"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_myAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_person_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="My Account" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_mybooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_menu_book_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="My Books" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ShareApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_share_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="Share App" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MoreApps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_apps_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="More Apps" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_RateUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_star_rate_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="Rate Us" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                tools:targetApi="honeycomb"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="24sp"
+                    android:layout_height="24sp"
+                    android:src="@drawable/ic_baseline_logout_24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:drawableEnd="@drawable/ic_baseline_arrow_forward_ios_24"
+                    android:gravity="center|start"
+                    android:text="Logout" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

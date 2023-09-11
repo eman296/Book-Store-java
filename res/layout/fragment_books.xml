@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".BooksFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Searching"
+            android:layout_weight="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|start"
+                android:background="@drawable/textview_bg"
+                android:drawableLeft="@drawable/ic_baseline_search_24"
+                android:drawablePadding="5dp"
+                android:hint="Search your book..."
+                android:padding="11dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@color/white"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_notifications_none_24"
+                app:tint="#515151" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/my_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycyle_view_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Populars"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_seeAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/btn_color"
+            android:gravity="end|center"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycyle_view_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
